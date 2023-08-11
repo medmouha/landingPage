@@ -1,0 +1,419 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-md bg-black">
+    <div class="container-xxl">
+        <a href="#intro" class="navbar-brand">
+            <span class="fs-5 fw-bold text-white">
+                CROSS DFZ 200cc
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#main-nav" aria-controls="main-nav" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-secondary"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#caracteristique">Caractéristique</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#commentaire">Commentaires</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item d-md-none">
+                    <a class="nav-link" href="#prix">Acheter</a>
+                </li>
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a class="btn text-black bg-white" href="#prix">Acheter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Intro-->
+<section id="intro">
+    <div class="container-lg">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 text-center text-md-start">
+                <h1>
+                    <div class="display-5">Cross DFZ200</div>
+                    <div class="display-5 text-muted">La toute nouvelle cross 200</div>
+                </h1>
+                <p class="lead my-4 text-muted">Le dernier modéle du Cross 200cc adapté à tout type de terrain.</p>
+                <a href="#prix" class="btn btn-lg bg-secondary text-white">Payer Maintenant</a>
+                <!-- open sidebar offcanvas-->
+                <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button">Découvrir les autres modéles</a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+                <!--Tooltip-->
+                <span class="tt" data-bs-placement="bottom" title="Cross DFZ 200cc">
+                    <img class="img-fluid" src="img/moto-dfz-200cc.jpg" alt="">
+                </span>            
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Caracteristique-->
+<section id="caracteristique">
+    <div class="container-md">
+        <div class="text-center">
+            <h2>A Propos de la nouvelle Moto Cross</h2>
+            <p class="lead text-muted">Un bref aperçu des différents caractéristiques techniques</p>
+        </div>
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+            <!--accordion-->
+            <div class="col-6 col-lg-4">
+                <img class="img-fluid" src="img/moto-dfz-200cc.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+            <div class="accordion" id="chapters">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1"
+                        aria-expanded="true" aria-controls="chapter-1" >
+                        Caractéristique 1 : Rapport de vitesses
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="chapter-1" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis pariatur odit rem architecto harum ratione est veniam voluptas iure. Laudantium aliquam velit omnis. Optio ab provident non sint illo!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, qui dolor, ut cupiditate maiores repudiandae neque impedit, veniam obcaecati voluptatibus nam nobis incidunt esse aut officia excepturi porro molestias nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2"
+                        aria-expanded="true" aria-controls="chapter-2" >
+                        Caractéristique 2 : Boite de transmission
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="chapter-2" aria-labelledby="heading-2" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis pariatur odit rem architecto harum ratione est veniam voluptas iure. Laudantium aliquam velit omnis. Optio ab provident non sint illo!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, qui dolor, ut cupiditate maiores repudiandae neque impedit, veniam obcaecati voluptatibus nam nobis incidunt esse aut officia excepturi porro molestias nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3"
+                        aria-expanded="true" aria-controls="chapter-3" >
+                        Caractéristique 3 : Pneumatique
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="chapter-3" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis pariatur odit rem architecto harum ratione est veniam voluptas iure. Laudantium aliquam velit omnis. Optio ab provident non sint illo!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, qui dolor, ut cupiditate maiores repudiandae neque impedit, veniam obcaecati voluptatibus nam nobis incidunt esse aut officia excepturi porro molestias nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4"
+                        aria-expanded="true" aria-controls="chapter-4" >
+                        Caractéristique 4 : Systéme de démarrage
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="chapter-4" aria-labelledby="heading-4" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis pariatur odit rem architecto harum ratione est veniam voluptas iure. Laudantium aliquam velit omnis. Optio ab provident non sint illo!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, qui dolor, ut cupiditate maiores repudiandae neque impedit, veniam obcaecati voluptatibus nam nobis incidunt esse aut officia excepturi porro molestias nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!--Prix-->
+<section id="prix" class="bg-light mt-5">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2>Plans de Prix</h2>
+            <p class="lead text-muted">Choisis ton Plan de Prix</p>
+        </div>
+        <!--card-->
+        <div class="row justify-content-center align-items-center g-5">
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card">
+                    <div class="card-body py-4 text-center">
+                        <h4 class="card-title">Vente Basique</h4>
+                        <p class="lead card-subtitle">avec CMC original</p>
+                        <p class="display-5 my-4">750.000 Fcfa</p>
+                        <p class="card-text text-muted mx-4 d-none d-lg-block">Ce type de vente vous offre la
+                          possibilité de circuler librement durant la validité du CMC.</p>
+                        <a href="#" class="btn btn-lg bg-secondary text-white mt-3">Acheter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-lg-4">
+                <div class="card">
+                    <div class="card-header text-center">Plus prisée</div>
+                        <div class="card-body py-5 text-center">
+                            <h4 class="card-title">Vente Compléte</h4>
+                            <p class="lead card-subtitle">avec les papiers au complet</p>
+                            <p class="display-4 my-4">850.000 Fcfa</p>
+                            <p class="card-text text-muted mx-5 d-none d-lg-block">C'est l'option la plus choisie par les entreprises mais
+                              également par certains particuliers. Vous serez hors emprises des controles et en cas de vol, vous disposerez
+                              des documents nécessaires qui faciliteront le travail des forces de défenses pour retrouver votre bien dans
+                              les meilleurs délais.
+                            </p>
+                            <a href="#" class="btn btn-lg bg-secondary text-white mt-3">Acheter</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card">
+                    <div class="card-body py-4 text-center">
+                        <h4 class="card-title">Vente Basique</h4>
+                        <p class="lead card-subtitle">avec CMC et assurance</p>
+                        <p class="display-5 my-4">780.000 Fcfa</p>
+                        <p class="card-text text-muted mx-4 d-none d-lg-block">Le préféré des livreurs indépendant car ils seront en régle
+                            durant la validité du CMC et dès que celui-ci arrive à terme, ils procéderont à la
+                            mutation de leur bien avec les frais à leur charge.</p>
+                        <a href="#" class="btn btn-lg bg-secondary text-white mt-3">Acheter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Commentaires-->
+<section id="commentaire">
+    <div class="container-lg bg-light">
+        <div class="text-center">
+            <h2><i class="bi bi-stars"></i>Témoignages</h2>
+            <p class="lead">Ce que les gens disent</p>
+        </div>
+        <!--list-group-->
+        <div class="row justify-content-center my-5">
+        <div class="col-lg-8">
+            <div class="list-group">
+                <div class="list-group-items py-3">
+                    <div class="pb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h5 class="mb-1">Un achat indispensable pour tout conducteur de moto 2 roues</h5>
+                    <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Corporis aliquid eius exercitationem magni laudantium porro culpa optio,
+                        debitis velit iusto, voluptatum ex corrupti sunt explicabo blanditiis 
+                        amet nam perspiciatis nobis.</p>
+                    <small>Commentaire de Fallou</small>
+                </div>
+                <div class="list-group-items py-3">
+                    <div class="pb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h5 class="mb-1">Simple à conduire</h5>
+                    <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Corporis aliquid eius exercitationem magni laudantium porro culpa optio,
+                        debitis velit iusto, voluptatum ex corrupti sunt explicabo blanditiis 
+                        amet nam perspiciatis nobis.</p>
+                    <small>Commentaire de Issa</small>
+                </div>
+                <div class="list-group-items py-3">
+                    <div class="pb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h5 class="mb-1">Une consommation en carburant faible</h5>
+                    <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Corporis aliquid eius exercitationem magni laudantium porro culpa optio,
+                        debitis velit iusto, voluptatum ex corrupti sunt explicabo blanditiis 
+                        amet nam perspiciatis nobis.</p>
+                    <small>Commentaire de Diouma</small>
+                </div>
+                <div class="list-group-items py-3">
+                    <div class="pb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h5 class="mb-1">Une moto très rapide</h5>
+                    <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Corporis aliquid eius exercitationem magni laudantium porro culpa optio,
+                        debitis velit iusto, voluptatum ex corrupti sunt explicabo blanditiis 
+                        amet nam perspiciatis nobis.</p>
+                    <small>Commentaire de Ousmane</small>
+                </div>
+                <div class="list-group-items py-3">
+                    <div class="pb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                    <h5 class="mb-1">Adaptée pour la livraison de produits</h5>
+                    <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Corporis aliquid eius exercitationem magni laudantium porro culpa optio,
+                        debitis velit iusto, voluptatum ex corrupti sunt explicabo blanditiis 
+                        amet nam perspiciatis nobis.</p>
+                    <small>Commentaire de abdoulaye</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2>Entrer en contact</h2>
+            <p class="lead">Questions à Poser? Remplissez ce formulaire pour nous contacter directement...</p>
+        </div>
+        <div class="row justify-content-center my-6">
+            <div class="col-lg-6">
+                <form>
+                    <label for="email" class="form-label">adresse email:</label>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text">
+                            <i class="bi bi-envelope-at-fill"></i>
+                        </span>
+                        <input type="email" class="form-control" id="email" placeholder="mouhamed@example.com">
+                        <!--Tooltip-->
+                        <span class="input-group-text">
+                            <span class="tt" data-bs-placement="bottom" title="Entrer une adresse mail dont vous allez vous souvenir">
+                                <i class="bi bi-question-circle text-muted"></i>
+                            </span>
+                        </span>
+                    </div>
+
+                    <label for="name" class="form-label">Nom:</label>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text">
+                            <i class="bi bi-person-fill"></i>
+                        </span>
+                        <input type="text" class="form-control" id="name" placeholder="mouhamed ngom">
+                        <!--Tooltip-->
+                        <span class="input-group-text">
+                            <span class="tt" data-bs-placement="bottom" title="Assez explicite...">
+                                <i class="bi bi-question-circle text-muted"></i>
+                            </span>
+                        </span> 
+                    </div>         
+
+                    <label for="subject" class="form-label">Sur quoi porte votre question</label>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text">
+                            <i class="bi bi-chat-right-dots-fill"></i>
+                        </span>
+                        <select class="form-select" id="subject">
+                            <option value="pricing" selected>Demande de prix</option>
+                            <option value="content">Demande sur les descriptions</option>
+                            <option value="other">Autre demande</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <div class="form-floating mt-5 mb-4">
+                        <textarea id="query" class="form-control"></textarea>
+                        <label for="query" class="form-floating">Votre requete...</label>
+                    </div>
+                    
+                    <div class="mb-4 text-center">
+                        <button type="submit" class="btn bg-secondary text-white">envoyer</button>
+                    </div>                    
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--modal-->
+<section class="bg-light">
+    <div class="container">
+        <div class="text-center">
+            <h2>Tenez-vous informer</h2>
+            <p class="lead">Recevez les dernières mises à jour au fur et à mesure</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Numquam in earum ducimus nulla dolor laborum accusantium ex quae ipsam, itaque
+                     sed rerum optio commodi repudiandae nisi nemo, totam quos! Vero!
+                </p>
+                <button type="button" class="btn bg-secondary text-white" data-bs-toggle="modal" data-bs-target="#reg-modal">Inscrivez-vous pour les mises à jour</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- modal itself -->
+<div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-title">Recevez les derniers modéles</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim sit
+                     esse repellendus voluptatum commodi architecto voluptate assumenda debitis. 
+                     Tempore laborum reprehenderit odio molestias commodi quis recusandae quibusdam dolorem harum?</p>
+                <label for="modal-email" class="form-label">Votre adresse mail</label>
+                <input type="email" class="form-control" id="modal-email" placeholder="mouhamed@example.com">
+            </div>
+            <div class="modal-footer">
+                <button class="btn bg-secondary text-white">envoyer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">Nos modéles de motos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Nous disposons d'une large gamme de motos 2 roues et de tricyles de puissance allant de 150cc à 300cc
+          et des capacités de charge allant jusqu'à 2.5t et qui varient en fonction de la puissance du moteur.
+          Pour plus de détails visitez notre <a href="#">site vitrine.</a>
+        </p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>
+    const tooltips = document.querySelectorAll('.tt')
+    tooltips.forEach(t => {
+        new bootstrap.Tooltip(t)
+    })
+</script>
+</body>
